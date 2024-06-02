@@ -1,5 +1,9 @@
 # Java-Agent
 
+## Repository Structure
+- post-service -> contains code for simple post service
+- agent-service -> contains code for the java agent
+
 ## Problem Statement
 Facilitate mocking of Java libraries such that their functionality is overridden without making any change in the business logic code.
 
