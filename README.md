@@ -1,11 +1,8 @@
 # Java-Agent
 
-## Docker image link
-docker pull kuldeepbishnoi/post-service
-
 ## Repository Structure
-- post-service branch -> contains code for simple post service
-- agent-service branch -> contains code for the java agent
+- `post-service` branch -> contains code for simple post service
+- `agent-service` branch -> contains code for the java agent
 
 ## Problem Statement
 Facilitate mocking of Java libraries such that their functionality is overridden without making any change in the business logic code.
@@ -38,6 +35,22 @@ In REPLAY mode, the following conditions are met:
 - `DB_USER`: Username for the database (default: root)
 - `DB_PASSWORD`: Password for the database (default: rootroot)
 - `HT_MODE`: Determines the mode of the java agent (RECORD or REPLAY)
+
+## Docker image link
+- `docker pull kuldeepbishnoi/post-service:LATEST`
+- `docker run -p 8000:8000 kuldeepbishnoi/post-service:LATEST -e HT_MODE=REPLAY`
+- `curl --location 'localhost:8000/api/createNewPost' \
+--header 'Content-Type: application/json' \
+--data '{
+  "postName": "Delhi",
+  "postContents": "Temperatures in India'\''s capital surged to a record-breaking 52.3."
+}'`
+
+## Note (Good idea to change these env variable according to your MySQL config)
+- `DB_PORT`=3306
+- `DB_NAME`=post_database
+- `DB_USER`=root
+- `DB_PASSWORD`=rootroot
 
 ## Resources
 - [Learn more about monkey patching](https://en.wikipedia.org/wiki/Monkey_patch)
