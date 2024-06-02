@@ -1,0 +1,5 @@
+/Users/kuldeep/Desktop/post-service/src/main/java/com/casa/post_service/PostServiceApplication.java
+/Users/kuldeep/Desktop/post-service/src/main/java/com/casa/post_service/config/RestTemplateConfig.java
+/Users/kuldeep/Desktop/post-service/src/main/java/com/casa/post_service/controller/PostController.java
+/Users/kuldeep/Desktop/post-service/src/main/java/com/casa/post_service/entity/Post.java
+/Users/kuldeep/Desktop/post-service/src/main/java/com/casa/post_service/repository/PostRepository.java

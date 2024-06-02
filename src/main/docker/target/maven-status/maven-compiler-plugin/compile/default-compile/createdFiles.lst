@@ -1,0 +1,5 @@
+com/casa/post_service/repository/PostRepository.class
+com/casa/post_service/controller/PostController.class
+com/casa/post_service/entity/Post.class
+com/casa/post_service/config/RestTemplateConfig.class
+com/casa/post_service/PostServiceApplication.class
