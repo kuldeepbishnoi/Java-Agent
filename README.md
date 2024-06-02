@@ -20,6 +20,7 @@ In RECORD mode, the following actions are performed:
 ### REPLAY Mode
 In REPLAY mode, the following conditions are met:
 - The same scenario as RECORD mode is played.
+- But a static data is returned | and no data is sent to DB & no outbound HTTP call
 - The DB and HTTP hosts used are `1.2.3.4:1234`.
 
 ## Deliverables
